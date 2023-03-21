@@ -17,28 +17,33 @@ function imprimeMensagem() {
 // EXERCÍCIOS PARA FAZER ------------------------------------------------------------------
 
 // EXERCÍCIO 01
-function calculaAreaRetangulo() {
-  // implemente sua lógica aqui
-
+function calculaAreaRetangulo(altura, largura) {
+  altura = Number(prompt("Digite a altura:"));
+  largura = Number(prompt("Digite a largura:"));
+  const area = altura * largura;
+  console.log(area);
 }
 
 // EXERCÍCIO 02
-function imprimeIdade() {
-  // implemente sua lógica aqui
-
+function imprimeIdade(anoAtual, anoDeNascimento) {
+  anoAtual = Number(prompt("Digite o ano atual:"));
+  anoDeNascimento = Number(prompt("Digite o ano de nascimento:"));
+  const idade = anoAtual - anoDeNascimento
+  console.log(idade)
 }
 
 // EXERCÍCIO 03
 function calculaIMC(peso, altura) {
-  // implemente sua lógica aqui
-
+  const imc = (peso / (altura * altura));
+  return imc.toFixed(1);
 }
 
 // EXERCÍCIO 04
-function imprimeInformacoesUsuario() {
-  // implemente sua lógica aqui
-  // "Meu nome é NOME, tenho IDADE anos, e o meu email é EMAIL."
-
+function imprimeInformacoesUsuario(nome, idade, email) {
+  nome = prompt("Digite seu nome:");
+  idade = Number(prompt("Digite sua idade:"));
+  email = prompt("Digite seu email:")
+  console.log(`Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}.`); 
 }
 
 // EXERCÍCIO 05
