@@ -47,27 +47,31 @@ function imprimeInformacoesUsuario(nome, idade, email) {
 }
 
 // EXERCÍCIO 05
-function imprimeTresCoresFavoritas() {
-  // implemente sua lógica aqui
-
+function imprimeTresCoresFavoritas(cor1, cor2, cor3) {
+  cor1 = prompt("Digite uma cor favorita:");
+  cor2 = prompt("Digite outra cor favorita:");
+  cor3 = prompt("Digite outra cor favorita:");
+  
+  let cores = [cor1, cor2, cor3]
+  console.log(cores);
 }
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
-  // implemente sua lógica aqui
-
+  const maisculas = string.toUpperCase();
+  return maisculas;
 }
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
-  // implemente sua lógica aqui
-
+  const quantidade = custo / valorIngresso;
+  return quantidade;
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
-  // implemente sua lógica aqui
-
+  const tamanhoIgual = string1.length === string2.length;
+  return tamanhoIgual;
 }
 
 // EXERCÍCIO 09
