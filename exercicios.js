@@ -76,13 +76,14 @@ function checaStringsMesmoTamanho(string1, string2) {
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
-  // implemente sua lógica aqui
-
+  const primeiroElemento = array[0];
+  return primeiroElemento;
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
-  // implemente sua lógica aqui
+  const ultimoElemento = array[array.length - 1]; 
+  return ultimoElemento;
 
 }
 
